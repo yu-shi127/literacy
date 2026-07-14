@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>異体字セレクタ</title>
+    <style>
+      * { text-align: center; }
+      table { border-collapse: collapse; }
+      .char {
+        font-family: serif;
+        font-size: xx-large;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>辻&#xE0100;と辻&#xE0101;</caption>
+      <tr style="border-top: solid 1px black;">
+        <td style="border-right: solid 1px black;">文字</td>
+        <td class="char">辻&#xE0100;</td>
+        <td class="char">辻&#xE0101;</td>
+      </tr>
+      <tr style="border-bottom: solid 1px black;">
+        <td style="border-right: solid 1px black;">HTML</td>
+        <td><code>辻&amp;#xE0100;</code></td>
+        <td><code>辻&amp;#xE0101;</code></td>
+      </tr>
+    </table>
+
+    <table>
+      <caption>Adobe-Japan1 に登録されている邉（U+9089）の異体字</caption>
+      <tr class="char" style="border-top: solid 1px black;">
+        <td>邉&#xE0100;</td>
+        <td>邉&#xE0101;</td>
+      </tr>
+      <tr style="border-bottom: solid 1px black;">
+        <td><code>E0100</code></td>
+        <td><code>E0101</code></td>
+      </tr>
+    </table>
+  </body>
+</html>
